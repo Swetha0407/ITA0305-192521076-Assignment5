@@ -1,0 +1,6 @@
+Automated validation executed on the packaged source:
+
+PASS: repository seed/search/empty-state data tests
+PASS: sync ACK/conflict/idempotent-retry tests
+
+Note: GUI screens were captured from the running Tkinter desktop prototype under a virtual display.

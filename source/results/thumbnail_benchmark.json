@@ -1,0 +1,26 @@
+[
+  {
+    "images": 50,
+    "sequential_median_s": 0.06371615000000475,
+    "workers4_median_s": 0.019779324999944947,
+    "speedup": 3.221351082515813,
+    "runs": 3,
+    "workers": 4
+  },
+  {
+    "images": 200,
+    "sequential_median_s": 0.2117203430000245,
+    "workers4_median_s": 0.0698914119999472,
+    "speedup": 3.02927551385261,
+    "runs": 3,
+    "workers": 4
+  },
+  {
+    "images": 1000,
+    "sequential_median_s": 1.0649587259999862,
+    "workers4_median_s": 0.3879059189999907,
+    "speedup": 2.7454046814893065,
+    "runs": 3,
+    "workers": 4
+  }
+]

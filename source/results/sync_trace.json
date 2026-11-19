@@ -1,0 +1,61 @@
+{
+  "trace": [
+    [
+      "A reconnect",
+      {
+        "status": "ACK",
+        "result": {
+          "visit_time": "11:00",
+          "version": 2
+        }
+      }
+    ],
+    [
+      "B reconnect",
+      {
+        "status": "CONFLICT",
+        "server": {
+          "visit_time": "11:00",
+          "version": 2
+        }
+      }
+    ],
+    [
+      "A retry same op_id",
+      {
+        "status": "DUPLICATE",
+        "result": {
+          "visit_time": "11:00",
+          "version": 2
+        }
+      }
+    ],
+    [
+      "network lost before send",
+      {
+        "status": "RETAINED_PENDING",
+        "op_id": "op-A-002"
+      }
+    ],
+    [
+      "reconnect",
+      {
+        "status": "ACK",
+        "result": {
+          "visit_time": "13:00",
+          "version": 3
+        }
+      }
+    ]
+  ],
+  "final": {
+    "visit_time": "13:00",
+    "version": 3
+  },
+  "counts": {
+    "acknowledged": 2,
+    "conflicts": 1,
+    "duplicates_prevented": 1,
+    "pending_after_recovery": 0
+  }
+}
